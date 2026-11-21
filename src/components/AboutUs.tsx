@@ -65,7 +65,7 @@ export function AboutUs({ onOpenContact }: AboutUsProps) {
               </div>
             </article>
             <article className="about-leader">
-              <LeaderPortrait initials="RT" name="Mrs. Renu Thakran" />
+              <LeaderPortrait src="/assets/leaders/renu-thakran.svg" initials="RT" name="Mrs. Renu Thakran" />
               <div className="about-leader__copy">
                 <p className="about-eyebrow">MANAGING DIRECTOR, GHD HOTELS</p>
                 <h3>Mrs. Renu Thakran</h3>
