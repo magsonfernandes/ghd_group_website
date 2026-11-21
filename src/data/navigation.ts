@@ -6,7 +6,7 @@ export type NavItem = {
 
 export const navItems: NavItem[] = [
   { id: 'about', label: 'About Us', action: 'navigate' },
-  { id: 'contact', label: 'Contact', action: 'open-contact' },
+  { id: 'contact', label: 'Contact Us', action: 'navigate' },
 ]
 
 export type ContactBrand = {
