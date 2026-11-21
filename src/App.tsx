@@ -3,6 +3,7 @@ import { ContactModal } from './components/ContactModal'
 import { Header } from './components/Header'
 import { LandingPage } from './components/LandingPage'
 import { AboutUs } from './components/AboutUs'
+import { ContactUs } from './components/ContactUs'
 
 export function App() {
   const [isContactOpen, setIsContactOpen] = useState(false)
@@ -27,7 +28,7 @@ export function App() {
   return (
     <>
       <Header onOpenContact={() => setIsContactOpen(true)} />
-      {window.location.pathname === '/about' || window.location.pathname === '/about/' ? <AboutUs onOpenContact={() => setIsContactOpen(true)} /> : <LandingPage />}
+      {window.location.pathname === '/about' || window.location.pathname === '/about/' ? <AboutUs onOpenContact={() => setIsContactOpen(true)} /> : window.location.pathname === '/contact' || window.location.pathname === '/contact/' ? <ContactUs /> : <LandingPage />}
       <ContactModal isOpen={isContactOpen} onClose={() => setIsContactOpen(false)} />
     </>
   )
