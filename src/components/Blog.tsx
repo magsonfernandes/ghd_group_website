@@ -132,6 +132,7 @@ export function Blog() {
                 <h3>{item.title}</h3>
                 <p className="blog-card__excerpt">{item.excerpt}</p>
                 <a href={`/blog/${item.slug}`} onClick={(event) => { event.preventDefault(); window.history.pushState({}, '', `/blog/${item.slug}`); setActiveSlug(item.slug); window.scrollTo(0, 0) }}>Read Article <span>↗</span></a>
+                </div>
               </article>
             ))}
           </div>
