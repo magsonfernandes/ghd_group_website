@@ -1,6 +1,6 @@
 .brand-card {
   position: relative;
-  min-height: clamp(360px, 46vh, 480px);
+  min-height: clamp(460px, 56vh, 560px);
   height: 100%;
   border: 1px solid rgba(201, 176, 136, 0.9);
   border-radius: var(--radius);
@@ -82,7 +82,7 @@
 
 .brand-card--hotels p {
   color: var(--navy);
-  max-width: 185px;
+  max-width: 320px;
 }
 
 .brand-card--infra p {
@@ -151,7 +151,7 @@
 
 @media (min-width: 901px) and (max-height: 860px) {
   .brand-card {
-    min-height: clamp(320px, 38vh, 400px);
+    min-height: 460px;
     padding: 26px 34px 24px;
   }
 
@@ -172,7 +172,7 @@
 
 @media (min-width: 901px) and (max-height: 720px) {
   .brand-card {
-    min-height: clamp(290px, 34vh, 360px);
+    min-height: 460px;
   }
 
   .brand-card__icons {
