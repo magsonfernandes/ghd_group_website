@@ -9,6 +9,8 @@ const articles = [
     title: "Beyond a Holiday: Why Premium Hotel Experiences Are Shaping Goa's Tourism Landscape",
     slug: 'premium-hotels-in-north-goa-beyond-a-holiday',
     keyword: 'hotels in North Goa',
+    image: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1400&q=85',
+    imageAlt: 'Premium resort pool surrounded by tropical greenery'
     excerpt: "North Goa's diverse coastline is changing what travellers expect from a stay. Discover why thoughtful design, personal service and memorable experiences are shaping the region's premium hospitality landscape.",
     sections: [
       { heading: "Why Hotels in North Goa Are Leading Goa's Tourism Shift", body: "North Goa is a major tourist attraction for this state. The lively beaches of Calangute and Baga, as well as the quieter ones like Candolim, Anjuna, and Vagator, are available to all types of travelers. This diversity is what makes hotels in North Goa compete based on experiences rather than prices. Modern travelers research more, compare more, and expect more. They look for thoughtfully designed rooms and clean, modern interiors; warm, personalized service; quality in-house dining and relaxation spaces; and easy access to beaches, cafés, markets, and nightlife. Premium hotels meet these expectations, and in doing so they raise the standard for the whole destination." },
@@ -26,6 +28,8 @@ const articles = [
     title: 'The New Era of Boutique Hospitality: Personalised Stays and Modern Comfort',
     slug: 'boutique-stays-in-north-goa-personalised-comfort', keyword: 'stays in North Goa',
     excerpt: 'Travellers want more than a standard room and buffet breakfast. Explore how boutique hospitality combines distinctive character, personalised service and modern comfort.',
+    image: 'https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1400&q=85',
+    imageAlt: 'Elegant boutique hotel room with contemporary furnishings',
     sections: [
       { heading: 'What Boutique Hospitality Means for Stays in North Goa', body: 'Boutique hospitality is about character over scale. Instead of large, impersonal properties, boutique hotels offer smaller guest numbers, thoughtful design and attentive service. For stays in North Goa, this means a quieter, more intimate base close to the beaches, cafés and local life that make the region special. Guests who choose boutique stays usually look for a distinct personality, staff who remember names and preferences, comfortable well-designed rooms with modern amenities, and a relaxed atmosphere instead of a crowded lobby.' },
       { heading: 'Personalised Service at Hotels in North Goa', body: 'Personalisation is at the heart of a boutique experience. Best hotels of North Goa are more than just an ordinary place to stay; they understand what their guests really want. It could be an intimate space for couples during their vacation; early morning meals for families going out to the beach; and suggestions from locals as tourists. Small details make a big impression such as warm welcomes, flexible hours when available, local dining recommendations and treating guests like people rather than numbers. Such hospitality makes an excellent visit unforgettable for customers to return again and again.' },
@@ -42,6 +46,8 @@ const articles = [
     title: "From Real Estate to Hospitality: How GHD Group Is Shaping Goa's Lifestyle and Tourism Landscape",
     slug: 'ghd-group-real-estate-hospitality-goa', keyword: 'buy property in Goa',
     excerpt: "Goa is becoming a place to live, invest and build a lifestyle. Discover how real estate and hospitality come together in GHD Group's approach to the state's changing landscape.",
+    image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1400&q=85',
+    imageAlt: 'Contemporary luxury villa among landscaped tropical gardens',
     sections: [
       { heading: 'Why More People Want to Buy Property in Goa', body: "Goa offers something rare in India: a relaxed coastal lifestyle with strong connectivity, a global food and culture scene, and a steady stream of visitors throughout the year. These strengths explain why interest to buy property in Goa continues to rise among families, professionals, remote workers and investors. Buyers are motivated by lifestyle, second homes, investment potential and flexibility." },
       { heading: 'Luxury Villas in Goa and the Rise of Premium Living', body: 'Premium living has become one of the most visible trends in Goan real estate. Luxury villas in Goa appeal to buyers who want privacy, space, design quality and resort-style amenities. Many people also search for villas for sale in Goa as a way to combine a holiday home with a long-term asset. Modern buyers value thoughtful architecture, green surroundings, security, easy access to beaches and well-planned communities.' },
@@ -59,6 +65,8 @@ const articles = [
     title: "Investing in Goa's Future: The Growing Connection Between Real Estate, Tourism and Hospitality",
     slug: 'investing-in-goa-real-estate-tourism-hospitality', keyword: 'villas for sale in Goa',
     excerpt: "Goa's economy connects visitors, tourism, hospitality and property demand. Explore what this relationship means for homebuyers and investors considering the state's future.",
+    image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1400&q=85',
+    imageAlt: 'Premium residential property with landscaped outdoor space and pool',
     sections: [
       { heading: 'Why Villas for Sale in Goa Are Attracting Investors', body: 'Goa offers a rare mix of lifestyle and long-term value. Villas for sale in Goa appeal to buyers who want a private holiday home, a family retreat or an income-generating asset supported by strong tourism demand. Steady tourism, lifestyle value, flexibility and premium appeal are key reasons investors are paying attention. The quality of design, location and developer reputation remains the biggest factor in long-term value.' },
       { heading: 'How Tourism Drives Demand to Buy Property in Goa', body: 'Tourism is the engine behind Goa’s property market. Every visitor who enjoys a beach sunset, a heritage walk or a memorable meal is a potential future resident or investor. As visitor numbers and travel expectations rise, so does the need for better homes, hotels, roads, dining and services. Real estate and tourism therefore grow side by side, each strengthening the other.' },
@@ -88,6 +96,7 @@ export function Blog() {
           <div className="blog-container">
             <a className="blog-back" href="/blog">← All insights</a>
             <p className="blog-eyebrow">{article.category} · BY {article.author.toUpperCase()}</p>
+            <img className="blog-article__image" src={article.image} alt={article.imageAlt} loading="eager" />
             <h1>{article.title}</h1>
             <p className="blog-keyword">Primary keyword: {article.keyword}</p>
             {article.sections.map((section) => <section className="blog-article__section" key={section.heading}><h2>{section.heading}</h2><p>{section.body}</p></section>)}
@@ -116,6 +125,8 @@ export function Blog() {
           <div className="blog-cards">
             {articles.map((item) => (
               <article className="blog-card" key={item.slug}>
+                <a className="blog-card__image-link" href={`/blog/${item.slug}`} aria-label={`Read ${item.title}`} onClick={(event) => { event.preventDefault(); window.history.pushState({}, "", `/blog/${item.slug}`); setActiveSlug(item.slug); window.scrollTo(0, 0) }}><img className="blog-card__image" src={item.image} alt={item.imageAlt} loading="lazy" /></a>
+                <div className="blog-card__body">
                 <div className="blog-card__top"><span>{item.category}</span><span>{item.number}</span></div>
                 <p className="blog-card__author">BY {item.author.toUpperCase()}</p>
                 <h3>{item.title}</h3>
