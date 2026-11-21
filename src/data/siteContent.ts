@@ -57,7 +57,7 @@ export const brandPanels: BrandPanel[] = [
       'Introducing GHD Hotels, where refined comfort, thoughtful experiences, and exceptional hospitality come together.',
     href: 'https://ghdhotels.in/',
     ctaLabel: 'Explore GHD Hotels',
-    ctaStyle: 'outline',
+    ctaStyle: 'filled',
     imageUrl: assets.cards.hotels,
     iconUrl: assets.icons.crown,
     variant: 'hotels',
