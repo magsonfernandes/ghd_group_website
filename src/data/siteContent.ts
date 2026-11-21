@@ -52,8 +52,9 @@ export const brandPanels: BrandPanel[] = [
     id: 'hotels',
     title: 'GHD Hotels',
     titleLines: ['GHD', 'Hotels'],
+    tagline: 'A New Era of Premium Hospitality',
     description:
-      'A New Era of Premium Hospitality\n\nIntroducing GHD Hotels, where refined comfort, thoughtful experiences, and exceptional hospitality come together.',
+      'Introducing GHD Hotels, where refined comfort, thoughtful experiences, and exceptional hospitality come together.',
     href: 'https://ghdhotels.in/',
     ctaLabel: 'Explore GHD Hotels',
     ctaStyle: 'outline',
