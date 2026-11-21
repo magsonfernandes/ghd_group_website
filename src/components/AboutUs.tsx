@@ -58,7 +58,7 @@ export function AboutUs({ onOpenContact }: AboutUsProps) {
           </div>
           <div className="about-leadership__grid">
             <article className="about-leader">
-              <PortraitPlaceholder initials="BT" name="Mr. Bharat Thakran" />
+              <LeaderPortrait src="/assets/leaders/bharat-thakran.svg" initials="BT" name="Mr. Bharat Thakran" />
               <div className="about-leader__copy">
                 <p className="about-eyebrow">CHAIRMAN, GHD GROUP</p>
                 <h3>Mr. Bharat Thakran</h3>
@@ -66,7 +66,7 @@ export function AboutUs({ onOpenContact }: AboutUsProps) {
               </div>
             </article>
             <article className="about-leader">
-              <PortraitPlaceholder initials="RT" name="Mrs. Renu Thakran" />
+              <LeaderPortrait initials="RT" name="Mrs. Renu Thakran" />
               <div className="about-leader__copy">
                 <p className="about-eyebrow">MANAGING DIRECTOR, GHD HOTELS</p>
                 <h3>Mrs. Renu Thakran</h3>
