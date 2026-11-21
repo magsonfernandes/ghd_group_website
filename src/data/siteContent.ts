@@ -41,8 +41,8 @@ export const brandPanels: BrandPanel[] = [
     description:
       'Thoughtfully designed luxury real estate developments in Goa’s most sought-after locations.',
     href: 'https://ghdinfra.com/',
-    ctaLabel: 'Explore GHD Infra Developers',
-    ctaStyle: 'outline',
+    ctaLabel: 'Explore GHD Infra',
+    ctaStyle: 'filled',
     imageUrl: assets.cards.infra,
     iconUrl: assets.icons.infra,
     variant: 'infra',
