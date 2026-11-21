@@ -4,6 +4,7 @@ export type BrandPanel = {
   id: 'infra' | 'hotels'
   title: string
   titleLines: [string, string]
+  tagline?: string
   description: string
   href: string
   ctaLabel: string
@@ -36,8 +37,9 @@ export const brandPanels: BrandPanel[] = [
     id: 'infra',
     title: 'GHD Infra Developers',
     titleLines: ['GHD Infra', 'Developers'],
+    tagline: 'The Most Trusted Real Estate Developer in Goa',
     description:
-      'The Most Trusted Real Estate Developer in Goa\n\nThoughtfully designed luxury real estate developments in Goa’s most sought-after locations.',
+      'Thoughtfully designed luxury real estate developments in Goa’s most sought-after locations.',
     href: 'https://ghdinfra.com/',
     ctaLabel: 'Explore GHD Infra Developers',
     ctaStyle: 'outline',
