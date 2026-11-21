@@ -162,6 +162,24 @@
   box-shadow: 0 18px 36px rgba(0, 0, 0, 0.28);
 }
 
+.brand-card__btn:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 4px;
+}
+
+.brand-card__btn:active {
+  transform: translateY(0);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.22);
+}
+
+.brand-card--infra .brand-card__btn:not(.brand-card__btn--outline) {
+  background: linear-gradient(135deg, #f4dfad 0%, #d1a85f 55%, #b8893f 100%);
+  color: #08254a;
+  border: 1px solid rgba(255, 244, 218, 0.9);
+  font-weight: 800;
+  letter-spacing: 0.01em;
+}
+
 .brand-card__btn--outline {
   background: transparent;
   color: var(--gold-light);
