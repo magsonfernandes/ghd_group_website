@@ -35,8 +35,8 @@ export const heroContent = {
 export const brandPanels: BrandPanel[] = [
   {
     id: 'infra',
-    title: 'GHD Infra Developers',
-    titleLines: ['GHD Infra', 'Developers'],
+    title: 'GHD Infra',
+    titleLines: ['GHD', 'Infra'],
     tagline: 'The Most Trusted Real Estate Developer in Goa',
     description:
       'Thoughtfully designed luxury real estate developments in Goa’s most sought-after locations.',
