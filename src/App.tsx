@@ -4,6 +4,7 @@ import { Header } from './components/Header'
 import { LandingPage } from './components/LandingPage'
 import { AboutUs } from './components/AboutUs'
 import { ContactUs } from './components/ContactUs'
+import { Blog } from './components/Blog'
 
 export function App() {
   const [isContactOpen, setIsContactOpen] = useState(false)
@@ -28,7 +29,7 @@ export function App() {
   return (
     <>
       <Header onOpenContact={() => setIsContactOpen(true)} />
-      {window.location.pathname === '/about' || window.location.pathname === '/about/' ? <AboutUs onOpenContact={() => setIsContactOpen(true)} /> : window.location.pathname === '/contact' || window.location.pathname === '/contact/' ? <ContactUs /> : <LandingPage />}
+      {window.location.pathname === '/about' || window.location.pathname === '/about/' ? <AboutUs onOpenContact={() => setIsContactOpen(true)} /> : window.location.pathname === '/contact' || window.location.pathname === '/contact/' ? <ContactUs /> : window.location.pathname === '/blog' || window.location.pathname === '/blog/' ? <Blog /> : <LandingPage />}
       <ContactModal isOpen={isContactOpen} onClose={() => setIsContactOpen(false)} />
     </>
   )
