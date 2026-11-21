@@ -34,12 +34,12 @@ export const heroContent = {
 export const brandPanels: BrandPanel[] = [
   {
     id: 'infra',
-    title: 'Luxury Infrastructure',
-    titleLines: ['Luxury', 'Infrastructure'],
+    title: 'GHD Infra Developers',
+    titleLines: ['GHD Infra', 'Developers'],
     description:
-      "Thoughtfully designed real estate developments in Goa's most sought-after locations.",
+      'The Most Trusted Real Estate Developer in Goa\n\nThoughtfully designed luxury real estate developments in Goa’s most sought-after locations.',
     href: 'https://ghdinfra.com/',
-    ctaLabel: 'Explore Luxury Infrastructure',
+    ctaLabel: 'Explore GHD Infra Developers',
     ctaStyle: 'outline',
     imageUrl: assets.cards.infra,
     iconUrl: assets.icons.infra,
@@ -48,12 +48,12 @@ export const brandPanels: BrandPanel[] = [
   },
   {
     id: 'hotels',
-    title: 'Royal Hospitality',
-    titleLines: ['Royal', 'Hospitality'],
+    title: 'GHD Hotels',
+    titleLines: ['GHD', 'Hotels'],
     description:
-      'World-class hospitality experiences crafted with elegance, care, and perfection.',
+      'A New Era of Premium Hospitality\n\nIntroducing GHD Hotels, where refined comfort, thoughtful experiences, and exceptional hospitality come together.',
     href: 'https://ghdhotels.in/',
-    ctaLabel: 'Explore Royal Hospitality',
+    ctaLabel: 'Explore GHD Hotels',
     ctaStyle: 'outline',
     imageUrl: assets.cards.hotels,
     iconUrl: assets.icons.crown,
