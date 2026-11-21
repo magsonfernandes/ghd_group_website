@@ -29,6 +29,7 @@ export function BrandCard({ panel }: BrandCardProps) {
           {panel.titleLines[1]}
         </h2>
         <div className="brand-card__line" />
+        {panel.tagline && <h3 className="brand-card__tagline">{panel.tagline}</h3>}
         <p>{panel.description}</p>
 
         {panel.highlights.length > 0 && (
