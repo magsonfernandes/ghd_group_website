@@ -27,7 +27,7 @@ export function App() {
   return (
     <>
       <Header onOpenContact={() => setIsContactOpen(true)} />
-      {window.location.pathname.replace(/\\/$/, '') === '/about' ? <AboutUs onOpenContact={() => setIsContactOpen(true)} /> : <LandingPage />}
+      {window.location.pathname === '/about' || window.location.pathname === '/about/' ? <AboutUs onOpenContact={() => setIsContactOpen(true)} /> : <LandingPage />}
       <ContactModal isOpen={isContactOpen} onClose={() => setIsContactOpen(false)} />
     </>
   )
