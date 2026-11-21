@@ -10,7 +10,7 @@ const articles = [
     slug: 'premium-hotels-in-north-goa-beyond-a-holiday',
     keyword: 'hotels in North Goa',
     image: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1400&q=85',
-    imageAlt: 'Premium resort pool surrounded by tropical greenery'
+    imageAlt: 'Premium resort pool surrounded by tropical greenery',
     excerpt: "North Goa's diverse coastline is changing what travellers expect from a stay. Discover why thoughtful design, personal service and memorable experiences are shaping the region's premium hospitality landscape.",
     sections: [
       { heading: "Why Hotels in North Goa Are Leading Goa's Tourism Shift", body: "North Goa is a major tourist attraction for this state. The lively beaches of Calangute and Baga, as well as the quieter ones like Candolim, Anjuna, and Vagator, are available to all types of travelers. This diversity is what makes hotels in North Goa compete based on experiences rather than prices. Modern travelers research more, compare more, and expect more. They look for thoughtfully designed rooms and clean, modern interiors; warm, personalized service; quality in-house dining and relaxation spaces; and easy access to beaches, cafés, markets, and nightlife. Premium hotels meet these expectations, and in doing so they raise the standard for the whole destination." },
