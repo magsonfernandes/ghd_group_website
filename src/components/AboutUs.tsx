@@ -27,11 +27,10 @@ const differentiators = [
   },
 ]
 
-function PortraitPlaceholder({ initials, name }: { initials: string; name: string }) {
+function LeaderPortrait({ src, name, initials }: { src?: string; name: string; initials: string }) {
   return (
-    <div className="about-leader__portrait" role="img" aria-label={`Portrait placeholder for ${name}`}>
-      <span>{initials}</span>
-      <small>Leadership portrait</small>
+    <div className={`about-leader__portrait${src ? ' about-leader__portrait--photo' : ''}`} role="img" aria-label={`Portrait of ${name}`}>
+      {src ? <img src={src} alt={name} /> : <><span>{initials}</span><small>Portrait to be added</small></>}
     </div>
   )
 }
