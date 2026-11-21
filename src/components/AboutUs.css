@@ -476,3 +476,17 @@
     width: 100%;
   }
 }
+
+.about-leader__portrait--photo::before,
+.about-leader__portrait--photo::after {
+  display: none;
+}
+
+.about-leader__portrait--photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 280px;
+  object-fit: cover;
+  object-position: center 38%;
+}
