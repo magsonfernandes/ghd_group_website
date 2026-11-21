@@ -45,7 +45,12 @@
 }
 
 .brand-card--hotels .brand-card__heading-icon {
-  color: var(--navy);
+  color: var(--gold-light);
+}
+
+/* Darken the Hotels photograph so every text element remains legible. */
+.brand-card--hotels .brand-card__bg {
+  filter: brightness(0.48) saturate(0.82);
 }
 
 .brand-card h2 {
@@ -61,7 +66,8 @@
 }
 
 .brand-card--hotels h2 {
-  color: var(--navy);
+  color: #fff8e9;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.72);
 }
 
 .brand-card__line {
@@ -98,8 +104,9 @@
 }
 
 .brand-card--hotels p {
-  color: var(--navy);
+  color: #fff;
   max-width: 320px;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.78);
 }
 
 .brand-card--infra p {
