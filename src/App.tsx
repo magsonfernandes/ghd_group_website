@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { ContactModal } from './components/ContactModal'
 import { Header } from './components/Header'
 import { LandingPage } from './components/LandingPage'
+import { AboutUs } from './components/AboutUs'
 
 export function App() {
   const [isContactOpen, setIsContactOpen] = useState(false)
@@ -26,7 +27,7 @@ export function App() {
   return (
     <>
       <Header onOpenContact={() => setIsContactOpen(true)} />
-      <LandingPage />
+      {window.location.pathname.replace(/\\/$/, '') === '/about' ? <AboutUs onOpenContact={() => setIsContactOpen(true)} /> : <LandingPage />}
       <ContactModal isOpen={isContactOpen} onClose={() => setIsContactOpen(false)} />
     </>
   )
