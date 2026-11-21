@@ -87,7 +87,7 @@ export function AboutUs({ onOpenContact }: AboutUsProps) {
           <article className="about-purpose__panel about-purpose__panel--dark">
             <p className="about-eyebrow">WHAT GUIDES OUR WORK</p>
             <h2>Our <em>Mission</em></h2>
-            <p>Our mission is to develop spaces people can trust, and we hold ourselves to that in six ways.</p>
+            <p>Our mission is to develop spaces people can trust, and we hold ourselves to that in every step of the journey.</p>
             <div className="about-purpose__rule" />
             <span>Thoughtful planning · Quality craftsmanship · Lasting relationships</span>
           </article>
