@@ -18,13 +18,13 @@ export function Header({ onOpenContact }: HeaderProps) {
           <ul className="site-menu-bar__menu">
             {navItems.map((item) => (
               <li key={item.id}>
-                <button
-                  type="button"
-                  className="site-menu-bar__link"
-                  onClick={onOpenContact}
-                >
-                  {item.label}
-                </button>
+                {item.action === 'navigate' ? (
+                  <a className="site-menu-bar__link" href="/about">{item.label}</a>
+                ) : (
+                  <button type="button" className="site-menu-bar__link" onClick={onOpenContact}>
+                    {item.label}
+                  </button>
+                )}
               </li>
             ))}
           </ul>
