@@ -172,7 +172,7 @@
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.22);
 }
 
-.brand-card--infra .brand-card__btn:not(.brand-card__btn--outline) {
+.brand-card__btn:not(.brand-card__btn--outline) {
   background: linear-gradient(135deg, #f4dfad 0%, #d1a85f 55%, #b8893f 100%);
   color: #08254a;
   border: 1px solid rgba(255, 244, 218, 0.9);
