@@ -42,8 +42,10 @@ a {
   html,
   body,
   #root {
-    height: 100%;
-    overflow: hidden;
+    height: auto;
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: visible;
   }
 }
 
