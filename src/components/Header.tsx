@@ -19,7 +19,7 @@ export function Header({ onOpenContact }: HeaderProps) {
             {navItems.map((item) => (
               <li key={item.id}>
                 {item.action === 'navigate' ? (
-                  <a className="site-menu-bar__link" href="/about">{item.label}</a>
+                  <a className="site-menu-bar__link" href={item.id === 'about' ? '/about' : '/contact'}>{item.label}</a>
                 ) : (
                   <button type="button" className="site-menu-bar__link" onClick={onOpenContact}>
                     {item.label}
